@@ -2,6 +2,12 @@ import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ExternalLink, Github, Play, Code2, Zap, Database } from 'lucide-react';
 
+//images
+import swarnandhrianImg from '../assets/swarnandhrian.png';
+import facialattendanceImg from '../assets/facialattendance.png';
+import bustrackingImg from '../assets/bustrackingsystem.png';
+import smartcheckoutImg from '../assets/smartcheckout.png';
+
 interface Project {
   name: string;
   tagline: string;
@@ -18,10 +24,10 @@ interface ProjectCardProps {
 }
 
 const projectImages = {
-  "Swarnandhrian Training Platform": "/src/assets/swarnandhrian.png?auto=compress&cs=tinysrgb&w=800",
-  "Facial Attendance System": "/src/assets/facialattendance.png?auto=compress&cs=tinysrgb&w=800",
-  "IoT Live Bus Tracking": "/src/assets/bustrackingsystem.png?auto=compress&cs=tinysrgb&w=800",
-  "Smart Checkout System": "/src/assets/smartcheckout.png?auto=compress&cs=tinysrgb&w=800"
+  "Swarnandhrian Training Platform": swarnandhrianImg,
+  "Facial Attendance System": facialattendanceImg,
+  "IoT Live Bus Tracking": bustrackingImg,
+  "Smart Checkout System": smartcheckoutImg
 };
 
 export const ProjectCard: React.FC<ProjectCardProps> = ({ project, index }) => {

@@ -18,6 +18,7 @@ import {
   Trophy,
   Target
 } from 'lucide-react';
+import myImg from './assets/myimg.jpeg';
 
 // Components
 import { CustomCursor } from './components/CustomCursor';
@@ -101,7 +102,7 @@ function App() {
               />
               
               <img
-                src="/src/assets/myimg.jpeg"
+                src={myImg}
                 alt="Chandra Sekhar Arasavalli"
                 className="relative w-80 h-80 rounded-full object-cover border-4 border-gray-900 shadow-2xl"
               />
